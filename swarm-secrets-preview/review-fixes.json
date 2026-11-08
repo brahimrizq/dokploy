@@ -1,0 +1,37 @@
+{
+  "implementationCommit": "82d416fe07419fa4393d381af9929d2b3b35340f",
+  "previousCommit": "1e4d70e5d9f249946aa0f987ef5ce93752a24bef",
+  "date": "2026-11-08",
+  "review": "https://github.com/Dokploy/dokploy/pull/5943#discussion_r4506198271",
+  "fix": "All Swarm secret routes verify the selected remote server belongs to the active organization after assigned-server access succeeds, using the existing Docker router pattern.",
+  "scope": [
+    "count",
+    "list",
+    "create",
+    "remove"
+  ],
+  "regressionBeforeFix": {
+    "failed": 16,
+    "passed": 37,
+    "file": "swarm-secrets-router.test.ts",
+    "note": "New foreign-organization, missing-server, lookup-failure, and remote-lookup assertions exposed the missing ownership check."
+  },
+  "targetedTests": {
+    "command": "pnpm test run __test__/docker __test__/permissions __test__/compose/secrets",
+    "passed": 168,
+    "files": 13
+  },
+  "workspaceTypecheck": "pnpm typecheck passed for all four workspaces",
+  "changedFilesBiome": "passed",
+  "diffCheck": "passed",
+  "regressionCoverage": [
+    "Foreign-organization server denied even when assigned-server access succeeds, for all four endpoints",
+    "Valid assigned remote server in active organization allowed, for all four endpoints",
+    "Missing remote server fails closed, for all four endpoints",
+    "Failed ownership lookup does not expose diagnostic details or perform Docker/audit operations, for all four endpoints",
+    "Local-server checks continue without a remote-server lookup, for all four endpoints"
+  ],
+  "livePreview": "Authenticated local count and list requests passed after the change. No secret values were printed or changed.",
+  "earlierValidation": "The UI and Docker service implementation are unchanged. Earlier screenshots, production builds, browser checks, and live Docker checks remain recorded at their original tested commits.",
+  "fixture": "User preview and test database left running."
+}
