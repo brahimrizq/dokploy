@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "shared-delete-dialog-confirmation",
+    "used-secret-delete-button-disabled",
+    "live-TOTP-enrollment-and-step-up",
+    "password-denied-when-2fa-enabled",
+    "server-enforced-expiry",
+    "atomic-parallel-attempt-limit",
+    "attempt-window-recovery",
+    "grant-denied-in-second-real-session",
+    "mobile-layout"
+  ],
+  "browserErrors": []
+}

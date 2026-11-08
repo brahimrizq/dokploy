@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "optimized-production-build-running",
+    "fresh-HTTPS-session-through-Traefik",
+    "production-TOTP-gate",
+    "production-create-and-service-style-delete-dialog",
+    "exact-name-required-in-UI-and-server",
+    "overview-secret-KPI",
+    "count-only-remote-manager-response",
+    "actual-rollback-only-reference-protection",
+    "maximum-511999-byte-UTF8-boundary",
+    "oversized-UTF8-rejected",
+    "duplicate-name-conflict",
+    "Created-last-column-date-above-relative-time",
+    "date-column-sorting",
+    "usage-count-and-disabled-delete",
+    "copy-exact-secret-name",
+    "metadata-only-response",
+    "already-deleted-not-found"
+  ],
+  "browserErrors": [],
+  "certificate": "Local self-signed certificate, browser trust bypass limited to this fixture. Public ACME issuance was not tested."
+}
