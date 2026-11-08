@@ -15,9 +15,7 @@
     "anonymous-list-rejected",
     "confirmation-survives-background-refetch",
     "shared-CodeEditor-multiline-UTF8-mounted-bytes",
-    "replacement-starts-with-empty-content",
-    "replacement-requires-new-name",
-    "replacement-keeps-original-references",
+    "secret-row-actions-delete-only",
     "disabled-delete-hover-and-keyboard-tooltip"
   ],
   "browserErrors": []

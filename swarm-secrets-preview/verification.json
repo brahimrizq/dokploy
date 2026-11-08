@@ -1,5 +1,5 @@
 {
-  "implementationCommit": "d78d6236196f092c0a76a5a8a3b0bc76dd287a12",
+  "implementationCommit": "99d00b0e05db5296d1cf6581fd3c44a6531fe7be",
   "baseCommit": "3c6d5f611389fdb0eeab9e13285ae3d6828800c0",
   "date": "2026-11-08",
   "node": "24.22.1",
@@ -8,17 +8,21 @@
   "targetedTests": {
     "passed": 149,
     "files": 13,
-    "command": "pnpm test run __test__/docker __test__/permissions __test__/compose/secrets"
+    "command": "pnpm test run __test__/docker __test__/permissions __test__/compose/secrets",
+    "testedCommit": "99d00b0e05db5296d1cf6581fd3c44a6531fe7be"
   },
   "workspaceTypecheck": "passed",
   "workspaceProductionBuilds": "passed",
   "changedFilesBiome": "passed",
-  "browserChecks": 17,
+  "browserChecks": 15,
   "liveDockerChecks": 9,
   "browserErrors": [],
   "fullRepositoryBiome": {
     "errors": 41,
     "cleanUpstreamBaseErrors": 41,
     "note": "Known errors outside this feature, checked against the original base."
-  }
+  },
+  "frontendTypecheck": "passed",
+  "workspaceTypecheckCommit": "d78d6236196f092c0a76a5a8a3b0bc76dd287a12",
+  "liveDockerChecksCommit": "d78d6236196f092c0a76a5a8a3b0bc76dd287a12"
 }
