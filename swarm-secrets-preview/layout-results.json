@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "mode": "Source development app with real PostgreSQL, Docker-in-Docker secrets and service references",
+  "checks": [
+    "Actions-last-Created-before-Actions",
+    "date-only-above-relative-time",
+    "creation-date-sorting",
+    "copy-exact-name",
+    "referenced-delete-disabled",
+    "create-and-typed-name-delete",
+    "Overview-count",
+    "TOTP-verification"
+  ],
+  "browserErrors": []
+}
