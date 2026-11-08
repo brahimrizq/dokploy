@@ -1,13 +1,15 @@
 # Swarm secrets preview
 
-Feature commit: `5deb0c575f2f824d9eb0ba6f37cf7bf14af90a25`. Base: `3c6d5f611389fdb0eeab9e13285ae3d6828800c0`.
+Feature commit: `d78d6236196f092c0a76a5a8a3b0bc76dd287a12`. Base: `3c6d5f611389fdb0eeab9e13285ae3d6828800c0`.
 
-The five screenshots show the latest source app on 8 November 2026. They were refreshed after moving Created before Actions and removing the clock time from creation dates. The app uses real PostgreSQL, Docker secrets, and service references in an isolated Docker-in-Docker Swarm. No real credentials or secret values are included.
+Seven screenshots show the source app on 8 November 2026. The list uses the standard signed-in Docker permission and selected-server checks. It opens directly. The app uses real PostgreSQL, Docker secrets, and service references in an isolated Docker-in-Docker Swarm. Screenshots contain sample names and public example content, with no private credentials or stored secret values.
 
-`layout-results.json` records eight browser checks against the current development app: column order, date-only text above relative time, sorting, copy-name buttons, referenced deletion protection, typed-name deletion, the Overview count, and TOTP verification. Type checks and changed-file Biome checks also passed.
+The create dialog reuses Dokploy's shared code editor. The pencil opens Create replacement secret with empty content and a new name. Docker cannot return or change an existing value. The old secret and its references are preserved. Hovering over or focusing a disabled delete icon explains why deletion is blocked.
 
-The initial feature commit `0b07870fb2ac48dba33439f89c75c634d9c179f3` passed 175 targeted tests, workspace type checks and production builds, and 17 HTTPS production browser checks. See `production-results.json` for that run. Its earlier column layout was replaced by the layout follow-up above. HTTPS used a local self-signed certificate through Traefik; public ACME issuance was not tested.
+`direct-access-results.json` records 17 browser checks with no browser errors. These cover normal signed-in access, column order, date formatting and sorting, copying names, typed-name deletion, count updates, metadata-only responses, anonymous access rejection, confirmation during background refresh, multiline UTF-8 content, replacement creation, and the disabled-delete tooltip. A temporary Swarm service mounted the UI-created value, and its SHA-256 matched the submitted bytes, including whitespace and non-ASCII text.
 
-`runtime-results.json` records the earlier real Dokploy stack deployment, mounted file bytes, task recreation, zero-replica deletion protection, and local/SSH scope checks. `security-results.json` records password and 2FA checks, expiry, parallel attempt limits, second-session rejection, and mobile verification.
+`direct-runtime-results.json` records nine live Docker checks, including UTF-8 byte limits, duplicate names, exact-name confirmation, already-deleted errors, zero-replica services, and rollback-only references. The tests remove their temporary secrets and services.
+
+149 targeted tests across 13 files, workspace type checks, and changed-file Biome checks passed. All workspace production builds passed. See `verification.json` for details. These screenshots come from the source development app. Earlier feature evidence remains in the branch history.
 
 The usage count is the number of distinct Swarm services referencing a secret, including rollback references. One stack can contain several such services. The host Swarm was not initialized or changed.

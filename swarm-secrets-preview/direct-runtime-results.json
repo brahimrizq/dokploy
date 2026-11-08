@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "normal-session-list-without-step-up",
+    "referenced-secret-delete-denied",
+    "maximum-511999-byte-UTF8-accepted",
+    "exact-500-KiB-UTF8-rejected",
+    "duplicate-name-conflict",
+    "wrong-confirmation-name-rejected",
+    "already-deleted-not-found",
+    "zero-replica-delete-denied",
+    "rollback-only-delete-denied"
+  ]
+}

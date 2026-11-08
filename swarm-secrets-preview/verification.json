@@ -1,31 +1,24 @@
 {
-  "implementationCommit": "5deb0c575f2f824d9eb0ba6f37cf7bf14af90a25",
+  "implementationCommit": "d78d6236196f092c0a76a5a8a3b0bc76dd287a12",
   "baseCommit": "3c6d5f611389fdb0eeab9e13285ae3d6828800c0",
   "date": "2026-11-08",
   "node": "24.22.1",
   "pnpm": "10.22.0",
   "dockerEngine": "29.9.3",
   "targetedTests": {
-    "passed": 175,
-    "files": 14,
+    "passed": 149,
+    "files": 13,
     "command": "pnpm test run __test__/docker __test__/permissions __test__/compose/secrets"
   },
   "workspaceTypecheck": "passed",
   "workspaceProductionBuilds": "passed",
   "changedFilesBiome": "passed",
+  "browserChecks": 17,
+  "liveDockerChecks": 9,
+  "browserErrors": [],
   "fullRepositoryBiome": {
     "errors": 41,
     "cleanUpstreamBaseErrors": 41,
-    "note": "Existing errors are outside the feature."
-  },
-  "productionBrowserErrors": [],
-  "productionValidatedCommit": "0b07870fb2ac48dba33439f89c75c634d9c179f3",
-  "layoutUpdate": {
-    "commit": "5deb0c575f2f824d9eb0ba6f37cf7bf14af90a25",
-    "browserChecks": 8,
-    "mode": "Source development app with real PostgreSQL and Docker-in-Docker",
-    "typecheck": "passed",
-    "changedFileBiome": "passed",
-    "browserErrors": []
+    "note": "Known errors outside this feature, checked against the original base."
   }
 }

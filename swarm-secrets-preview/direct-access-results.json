@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "mode": "Source development app with real PostgreSQL, Docker-in-Docker secrets and service references",
+  "checks": [
+    "list-opens-directly-after-normal-sign-in",
+    "no-verification-form-or-lock-button",
+    "Actions-last-Created-before-Actions",
+    "date-only-above-relative-time",
+    "creation-date-sorting",
+    "copy-exact-name",
+    "referenced-delete-disabled",
+    "create-and-typed-name-delete-without-extra-credentials",
+    "Overview-count-updates-after-create-and-delete",
+    "metadata-only-GET-response",
+    "anonymous-list-rejected",
+    "confirmation-survives-background-refetch",
+    "shared-CodeEditor-multiline-UTF8-mounted-bytes",
+    "replacement-starts-with-empty-content",
+    "replacement-requires-new-name",
+    "replacement-keeps-original-references",
+    "disabled-delete-hover-and-keyboard-tooltip"
+  ],
+  "browserErrors": []
+}
