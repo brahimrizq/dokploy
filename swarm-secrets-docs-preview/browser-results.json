@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Production page and title",
+    "Sidebar entry immediately after Cluster",
+    "All sections, reference table, and literal Compose interpolation render",
+    "Working cross-link from cluster",
+    "Working cross-link from docker-compose",
+    "Mobile page has no horizontal overflow",
+    "No browser page errors"
+  ],
+  "passed": 7,
+  "pageErrors": []
+}
