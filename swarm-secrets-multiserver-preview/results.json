@@ -1,0 +1,43 @@
+{
+  "implementationCommit": "82d416fe07419fa4393d381af9929d2b3b35340f",
+  "provider": "Vagrant 2.4.9 Docker provider",
+  "topology": {
+    "independentSwarms": 2,
+    "remoteManagers": 2,
+    "remoteWorkers": 1,
+    "remoteNodes": 3
+  },
+  "passed": 16,
+  "checks": [
+    "Local Swarm and Vagrant Swarm start with separate secret stores",
+    "UI creation targets the selected remote manager, leaving local secrets unchanged",
+    "Joined managers expose the same Swarm secret ID over independent SSH connections",
+    "Switching back to local restores the local list and count without remote rows",
+    "Typed-name UI deletion removes only the selected Swarm's same-name secret",
+    "A remote secret ID cannot delete anything through the local-server endpoint",
+    "All worker endpoints fail safely and the interface explains the manager requirement",
+    "Dokploy deploys a remote Stack and three worker services mount the exact UI-created UTF-8 secret",
+    "Both managers report three service references and reject deletion of the used secret",
+    "Selected-server interface shows service references and protects used secrets on the joined manager",
+    "Remote Overview shows two secrets, three nodes, and two managers",
+    "An unreachable selected server fails safely and recovers after its connection is restored",
+    "Existing local secrets remain unchanged after the full remote workflow",
+    "No browser page errors",
+    "Joined-manager deletion protects zero-replica and rollback-only references, then succeeds after service removal",
+    "A recreated worker task mounts the same secret bytes and both managers keep the correct usage count"
+  ],
+  "browserPageErrors": [],
+  "userPreviewLeftRunning": true,
+  "localSecretsPreserved": true,
+  "remoteStackServicesHealthy": 3,
+  "mountedContentHashMatched": true,
+  "remoteZeroReplicaAndRollbackProtection": true,
+  "remoteTaskRecreationMountedBytesMatched": true,
+  "date": "2026-11-09",
+  "vagrantVersion": "2.4.9",
+  "dockerEngineVersion": "29.9.3",
+  "docsCommit": "d9ac8d3910d5197dbedb82da27b64095b30e3868",
+  "docsValidation": "MDX generation and docs type check passed; this change adds six lines of prose.",
+  "providerBoundary": "Vagrant Docker provider with three SSH-enabled Docker-in-Docker containers, not virtual machines. Remote SSH and Swarm control/data-plane operations were real.",
+  "existingMySqlTestApplicationHealthy": true
+}
