@@ -1,0 +1,13 @@
+
+> dokploy@v0.31.0 test /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+> vitest --config __test__/vitest.config.ts run __test__/backups/backup-files.test.ts
+
+
+ RUN  v4.1.11 /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+
+
+ Test Files  1 passed (1)
+      Tests  14 passed (14)
+   Start at  10:59:26
+   Duration  3.15s (transform 967ms, setup 37ms, import 73ms, tests 2.95s, environment 0ms)
+

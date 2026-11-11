@@ -1,0 +1,4 @@
+
+> dokploy@v0.31.0 build-server /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+> tsx esbuild.config.ts
+

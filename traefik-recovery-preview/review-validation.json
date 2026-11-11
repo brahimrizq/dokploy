@@ -1,0 +1,51 @@
+{
+  "implementationCommit": "592098c5f5e2b34515ae56f0143525b8b44a5464",
+  "reviewsAddressed": [
+    {
+      "commentId": 4536916462,
+      "fix": "Allow the standalone path on active Swarm workers with ControlAvailable=false."
+    },
+    {
+      "commentId": 4536916469,
+      "fix": "Find running task containers by their exact Swarm service label; wait for settings updates before reconnecting."
+    },
+    {
+      "commentId": 4536916477,
+      "fix": "Remove interrupted candidates before shared network repair; defer nested recreation without losing healthy backup rollback."
+    },
+    {
+      "commentId": 4536916482,
+      "fix": "Wait for the requested ForceUpdate generation to run stably; report task failure, rollback, or a bounded timeout."
+    }
+  ],
+  "targetedTests": {
+    "passed": 191,
+    "suites": 14
+  },
+  "broaderTests": {
+    "passed": 1705,
+    "failed": 1,
+    "skipped": 4,
+    "excluded": "__test__/deploy/application.real.test.ts",
+    "failure": "Unchanged backup-files test exceeded its 5-second timeout during concurrent module imports.",
+    "isolatedRetry": {
+      "passed": 14,
+      "failed": 0
+    },
+    "remainingFailures": 0
+  },
+  "typecheck": "All workspace packages passed after the final source change.",
+  "serverBuild": "pnpm --filter dokploy build-server passed.",
+  "biome": "Changed-file check passed; existing informational parseInt radix notice remains.",
+  "liveChecks": {
+    "passed": 8,
+    "fixtures": "Two disposable Docker-in-Docker nodes, one manager and one worker. Compose database rows were synthetic; task lookup and Docker network operations were real.",
+    "staleNetworkError": "Injected start failure, followed by real Docker recreation.",
+    "files": [
+      "review-live-manager.json",
+      "review-live-worker.json"
+    ],
+    "cleanup": "Both nested engines and their fixture network were removed."
+  },
+  "threads": "Left unresolved for the author to resolve in GitHub."
+}

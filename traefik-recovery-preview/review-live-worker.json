@@ -1,0 +1,30 @@
+{
+  "node": "worker",
+  "checks": [
+    {
+      "test": "Reload reaches a stopped standalone proxy on an active Swarm worker after the real service API 503",
+      "passed": true
+    },
+    {
+      "test": "Interrupted-update ensure reaches real Docker recreation with stale-IP simulation on the old container",
+      "passed": true,
+      "details": {
+        "errorInjected": true
+      }
+    },
+    {
+      "test": "Interrupted-update restore reaches real Docker recreation with stale-IP simulation on the old container",
+      "passed": true,
+      "details": {
+        "errorInjected": true
+      }
+    },
+    {
+      "test": "Interrupted-update recreate reaches real Docker recreation with stale-IP simulation on the old container",
+      "passed": true,
+      "details": {
+        "errorInjected": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "node": "manager",
+  "checks": [
+    {
+      "test": "Swarm-service reconnection finds a generated task name and connects its real bridge network",
+      "passed": true
+    },
+    {
+      "test": "Reload waits for the replacement generation to stabilize and reconnects the replacement task",
+      "passed": true,
+      "details": {
+        "elapsedMs": 9174
+      }
+    },
+    {
+      "test": "writeTraefikSetup waits for its new Swarm task and reconnects its isolated Compose network",
+      "passed": true
+    },
+    {
+      "test": "A real failed replacement is reported as a reload error",
+      "passed": true,
+      "details": {
+        "previousForceUpdate": 2
+      }
+    }
+  ]
+}

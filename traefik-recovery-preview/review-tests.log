@@ -1,0 +1,13 @@
+
+> dokploy@v0.31.0 test /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+> vitest --config __test__/vitest.config.ts run __test__/traefik --maxWorkers 2
+
+
+ RUN  v4.1.11 /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+
+
+ Test Files  14 passed (14)
+      Tests  191 passed (191)
+   Start at  10:59:02
+   Duration  16.42s (transform 3.66s, setup 202ms, import 28.78s, tests 598ms, environment 2ms)
+
