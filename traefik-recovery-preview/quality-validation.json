@@ -1,0 +1,45 @@
+{
+  "implementationCommit": "f196ef31e78c04b3e016d388e9cdb8d6b79ea5fb",
+  "changes": [
+    "Deduplicate reload requests that overlap during audit logging.",
+    "Serialize Swarm settings updates and reloads on the same server.",
+    "Only create a Swarm service after a 404 inspection; preserve other Docker errors.",
+    "Use one UI state for the complete reload operation."
+  ],
+  "regressionReproduction": {
+    "failedBeforeFix": 4,
+    "cases": [
+      "Concurrent requests started two reloads.",
+      "Overlapping settings update and reload caused the earlier generation wait to time out.",
+      "Inspection failure incorrectly triggered service creation.",
+      "Update failure incorrectly triggered service creation."
+    ]
+  },
+  "targetedTests": {
+    "command": "pnpm --filter dokploy test run __test__/traefik --maxWorkers 2",
+    "passed": 196,
+    "failed": 0,
+    "suites": 14
+  },
+  "typecheck": {
+    "command": "pnpm typecheck",
+    "result": "All workspace packages passed."
+  },
+  "serverBuild": {
+    "command": "pnpm --filter dokploy build-server",
+    "result": "Passed."
+  },
+  "biome": "All five changed files passed with no diagnostics.",
+  "liveChecks": {
+    "passed": 10,
+    "failed": 0,
+    "fixtures": "Two disposable Docker-in-Docker nodes, one manager and one worker.",
+    "limits": "Compose database rows and stale-IP start failures were injected. Docker containers, task generations, network connections and task failures were real. No live SSH or full VM reboot was performed in this pass.",
+    "files": [
+      "quality-live-manager.json",
+      "quality-live-worker.json"
+    ],
+    "cleanup": "Both nested engines, fixture network and private test state were removed."
+  },
+  "broaderTests": "Not repeated for this focused follow-up. Prior broad-suite results are recorded separately in review-validation.json."
+}
