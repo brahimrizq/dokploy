@@ -1,0 +1,27 @@
+Exit status: 0
+Command: pnpm --filter docs build
+
+
+Route (app)
+┌ ○ /_not-found
+├ ƒ /api/search
+├   /docs/[[...slug]]
+│ ├ ● /docs/cli/application
+│ ├ ● /docs/cli/authentication
+│ ├ ● /docs/cli/databases
+│ └ ● [+219 more paths]
+├ ○ /icon.svg
+├ ○ /llms-full.txt
+├ ○ /llms.txt
+├   /og/docs/[...slug]
+│ ├ ● /og/docs/cli/application/image.png
+│ ├ ● /og/docs/cli/authentication/image.png
+│ ├ ● /og/docs/cli/databases/image.png
+│ └ ● [+219 more paths]
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand

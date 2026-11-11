@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "optimized production Web Server settings through Traefik",
+    "browser reload through the same proxy receives its response and shows success",
+    "direct panel port shows the real Docker port conflict while Traefik is stopped",
+    "Reload recovers after the blocker is removed"
+  ],
+  "browserErrors": []
+}

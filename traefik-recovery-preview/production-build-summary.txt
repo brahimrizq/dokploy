@@ -1,0 +1,50 @@
+Exit status: 0
+Node: 24.22.1
+Commands: pnpm --filter @dokploy/server build; pnpm --filter dokploy build
+Build includes the server library, server bundle and optimized Next.js frontend.
+The host build emitted database-origin lookup warnings because the fixture database runs in the nested engine; production runtime authentication and database access passed.
+
+├ ƒ /dashboard/project/[projectId]/environment/[environmentId]/services/libsql/[libsqlId]
+├ ƒ /dashboard/project/[projectId]/environment/[environmentId]/services/mariadb/[mariadbId]
+├ ƒ /dashboard/project/[projectId]/environment/[environmentId]/services/mongo/[mongoId]
+├ ƒ /dashboard/project/[projectId]/environment/[environmentId]/services/mysql/[mysqlId]
+├ ƒ /dashboard/project/[projectId]/environment/[environmentId]/services/postgres/[postgresId]
+├ ƒ /dashboard/project/[projectId]/environment/[environmentId]/services/redis/[redisId]
+├ ƒ /dashboard/projects
+├ ƒ /dashboard/requests
+├ ƒ /dashboard/schedules
+├ ƒ /dashboard/settings/ai
+├ ƒ /dashboard/settings/audit-logs
+├ ƒ /dashboard/settings/billing
+├ ƒ /dashboard/settings/certificates
+├ ƒ /dashboard/settings/deployments
+├ ƒ /dashboard/settings/destinations
+├ ƒ /dashboard/settings/dns
+├ ƒ /dashboard/settings/dns/[dnsProviderId]
+├ ƒ /dashboard/settings/dns/[dnsProviderId]/[zoneId]
+├ ƒ /dashboard/settings/git-providers
+├ ƒ /dashboard/settings/invoices
+├ ƒ /dashboard/settings/license
+├ ƒ /dashboard/settings/logs-and-metrics
+├ ƒ /dashboard/settings/notifications
+├ ƒ /dashboard/settings/profile
+├ ƒ /dashboard/settings/registry
+├ ƒ /dashboard/settings/secrets
+├ ƒ /dashboard/settings/server
+├ ƒ /dashboard/settings/servers
+├ ƒ /dashboard/settings/sessions
+├ ƒ /dashboard/settings/ssh-keys
+├ ƒ /dashboard/settings/sso
+├ ƒ /dashboard/settings/tags
+├ ƒ /dashboard/settings/users
+├ ƒ /dashboard/settings/whitelabeling
+├ ƒ /dashboard/swarm
+├ ƒ /dashboard/traefik
+├ ƒ /invitation
+├ ƒ /register
+├ ƒ /reset-password
+├ ƒ /send-reset-password
+└ ƒ /swagger
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand

@@ -1,0 +1,12 @@
+{
+  "environment": "Docker 29.9.3 inside Docker, 20 Swarm tasks, 8 isolated bridge networks, daemon SIGKILL and restart (not a VM reboot)",
+  "attempts": [
+    {
+      "attempt": 1,
+      "state": "exited",
+      "exitCode": 255,
+      "error": "failed to set up container networking: could not find a network matching network mode dokploy-network: network dokploy-network not found",
+      "networkMode": "dokploy-network"
+    }
+  ]
+}

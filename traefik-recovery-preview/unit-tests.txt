@@ -1,0 +1,18 @@
+
+> dokploy@v0.31.0 test /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+> vitest --config __test__/vitest.config.ts run --maxWorkers=2 --exclude __test__/deploy/application.real.test.ts
+
+
+ RUN  v4.1.11 /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+
+ Network env-file-literals-1567598_default Creating
+ Network env-file-literals-1567598_default Creating
+ Network env-file-literals-1567598_default Created
+ Network env-file-literals-1567598_default Created
+ Container env-file-literals-1567598-test-run-d1d03942a3f4 Creating
+ Container env-file-literals-1567598-test-run-d1d03942a3f4 Created
+
+ Test Files  177 passed | 1 skipped (178)
+      Tests  1685 passed | 4 skipped (1689)
+   Start at  09:53:32
+   Duration  278.03s (transform 11.66s, setup 3.30s, import 479.31s, tests 29.89s, environment 31ms)

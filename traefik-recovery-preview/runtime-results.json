@@ -1,0 +1,39 @@
+{
+  "dockerVersion": "29.9.3",
+  "checks": [
+    {
+      "test": "existing startup restore leaves an exited Traefik stopped",
+      "passed": true,
+      "state": "exited",
+      "exitCode": 0,
+      "error": ""
+    },
+    {
+      "test": "recovers exited Traefik and preserves env, mounts, ports and all nine networks",
+      "passed": true,
+      "recreated": false
+    },
+    {
+      "test": "HTTP routes to overlay Swarm app and isolated bridge app after recovery",
+      "passed": true
+    },
+    {
+      "test": "healthy recovery check retains container identity",
+      "passed": true
+    },
+    {
+      "test": "manual reload restarts healthy container without recreating it",
+      "passed": true
+    },
+    {
+      "test": "simulated stale-IP start error triggers real Docker recreation retaining configuration and nine networks",
+      "passed": true
+    },
+    {
+      "test": "missing Traefik recreated from existing on-disk config",
+      "passed": true
+    }
+  ],
+  "stateOrigin": "controlled stopped-container replay; actual overlay boot failure recorded separately in reboot-attempts.json",
+  "passed": true
+}

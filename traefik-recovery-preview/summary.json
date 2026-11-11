@@ -1,0 +1,39 @@
+{
+  "issue": "https://github.com/Dokploy/dokploy/issues/5960",
+  "issue_comment": "https://github.com/Dokploy/dokploy/issues/5960#issuecomment-6792659336",
+  "implementation_branch": "fix/traefik-reboot-recovery",
+  "implementation_commit": "6e7029b87",
+  "documentation_branch": "docs/traefik-reboot-recovery",
+  "documentation_commit": "bd6d390",
+  "broad_regression": {
+    "passed": 1685,
+    "skipped": 4,
+    "excluded": [
+      "__test__/deploy/application.real.test.ts"
+    ]
+  },
+  "final_affected_suites": {
+    "files": 14,
+    "passed": 178
+  },
+  "workspace_typechecks": "passed",
+  "biome_changed_files": "passed",
+  "production_server_bundle": "passed",
+  "documentation_mdx_and_typechecks": "passed",
+  "boundaries": [
+    "Docker daemon SIGKILL and restart inside Docker, not a full VM reboot",
+    "Live remote SSH recovery not tested",
+    "The separate stale-IP conflict recreation test injects the start error but uses the real Docker API for recreation"
+  ],
+  "full_production_build": "passed (server library, server bundle, optimized Next.js frontend)",
+  "documentation_production_build": "passed",
+  "production_swarm_checks": {
+    "passed": 10,
+    "restarts_passed": 3,
+    "restarts_with_reported_overlay_boot_failure": 2
+  },
+  "production_browser_checks": {
+    "passed": 4,
+    "browser_errors": []
+  }
+}

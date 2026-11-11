@@ -1,0 +1,5 @@
+
+> docs@0.0.0 types:check /home/brahim/projects/open-source/dokploy-sources/dokploy-website-traefik-recovery/apps/docs
+> fumadocs-mdx && tsc --noEmit
+
+[MDX] generated files in 51.78704099999993ms

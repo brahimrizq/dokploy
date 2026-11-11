@@ -1,0 +1,12 @@
+
+> dokploy@v0.31.0 test /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+> vitest --config __test__/vitest.config.ts run __test__/traefik __test__/utils/docker-cleanup-traefik.test.ts --maxWorkers=2
+
+
+ RUN  v4.1.11 /home/brahim/projects/open-source/dokploy-sources/dokploy-traefik-recovery/apps/dokploy
+
+
+ Test Files  14 passed (14)
+      Tests  178 passed (178)
+   Start at  10:00:58
+   Duration  28.65s (transform 6.67s, setup 401ms, import 51.78s, tests 953ms, environment 5ms)

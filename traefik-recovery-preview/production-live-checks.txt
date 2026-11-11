@@ -1,0 +1,17 @@
+Loaded dokploy-traefik-5960-runtime:local
+Loaded postgres:18.6-alpine
+Loaded traefik:v3.7.16
+Loaded busybox:1.37
+Waiting for the optimized build to finish.
+Started production Dokploy Swarm service.
+production startup recreates missing standalone Traefik automatically and serves the panel through it
+normal production sign-in through Traefik and active organization session
+periodic recovery reconnects eight actual isolated Compose records without restarting healthy Traefik
+HTTP routes reach both the Swarm overlay app and isolated bridge app
+Reload through the proxy being restarted returns its full response and the selected-proxy poll confirms success
+one-minute production recovery starts a stopped proxy without replacing its container
+one-minute production recovery recreates a deleted proxy and restores all eight isolated connections
+daemon crash/restart 1 recovers panel, overlay route and eight isolated connections without manual Traefik commands
+daemon crash/restart 2 recovers panel, overlay route and eight isolated connections without manual Traefik commands
+daemon crash/restart 3 recovers panel, overlay route and eight isolated connections without manual Traefik commands
+All production checks passed.

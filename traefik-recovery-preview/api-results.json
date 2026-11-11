@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "authenticated Reload starts an exited container without recreation",
+    "Reload reports a real port conflict to the authenticated caller and retains the existing container",
+    "Reload succeeds after the conflicting container is removed",
+    "Reload recreates a missing container and reconnects eight actual isolated Compose records from the local database",
+    "overlay and isolated HTTP routes return expected content after API recreation"
+  ],
+  "environment": "current source Dokploy development server with real PostgreSQL 18.6 and a nested Docker 29.9.3 Swarm"
+}

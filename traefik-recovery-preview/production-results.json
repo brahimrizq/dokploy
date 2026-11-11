@@ -1,0 +1,39 @@
+{
+  "environment": "Node 24.22.1, full optimized production Dokploy build, PostgreSQL 18.6, Traefik 3.7.16, Docker 29.9.3 inside Docker; real Swarm service, not a VM",
+  "checks": [
+    "production startup recreates missing standalone Traefik automatically and serves the panel through it",
+    "normal production sign-in through Traefik and active organization session",
+    "periodic recovery reconnects eight actual isolated Compose records without restarting healthy Traefik",
+    "HTTP routes reach both the Swarm overlay app and isolated bridge app",
+    "Reload through the proxy being restarted returns its full response and the selected-proxy poll confirms success",
+    "one-minute production recovery starts a stopped proxy without replacing its container",
+    "one-minute production recovery recreates a deleted proxy and restores all eight isolated connections",
+    "daemon crash/restart 1 recovers panel, overlay route and eight isolated connections without manual Traefik commands",
+    "daemon crash/restart 2 recovers panel, overlay route and eight isolated connections without manual Traefik commands",
+    "daemon crash/restart 3 recovers panel, overlay route and eight isolated connections without manual Traefik commands"
+  ],
+  "restarts": [
+    {
+      "attempt": 1,
+      "automatically_recovered": true,
+      "overlay_boot_failure_observed": false,
+      "isolated_connections": 8,
+      "image": "traefik:v3.7.16"
+    },
+    {
+      "attempt": 2,
+      "automatically_recovered": true,
+      "overlay_boot_failure_observed": true,
+      "isolated_connections": 8,
+      "image": "traefik:v3.7.16"
+    },
+    {
+      "attempt": 3,
+      "automatically_recovered": true,
+      "overlay_boot_failure_observed": true,
+      "isolated_connections": 8,
+      "image": "traefik:v3.7.16"
+    }
+  ],
+  "passed": true
+}

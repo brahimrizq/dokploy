@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "normal authenticated Web Server settings page",
+    "Reload waits for selected Traefik result and shows success",
+    "real Docker port conflict appears as an error toast",
+    "Reload recovers after the blocker is removed"
+  ],
+  "browserErrors": []
+}

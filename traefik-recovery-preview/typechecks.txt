@@ -1,0 +1,9 @@
+Scope: 4 of 5 workspace projects
+packages/server typecheck$ tsc --noEmit
+packages/server typecheck: Done
+apps/api typecheck$ tsc --noEmit
+apps/dokploy typecheck$ tsc --noEmit
+apps/schedules typecheck$ tsc --noEmit
+apps/api typecheck: Done
+apps/schedules typecheck: Done
+apps/dokploy typecheck: Done
