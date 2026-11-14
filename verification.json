@@ -1,0 +1,42 @@
+{
+  "targeted_backup_tests": {
+    "passed": 218,
+    "files": 16
+  },
+  "broader_suite_run": {
+    "passed": 1843,
+    "failed": 4,
+    "skipped": 5,
+    "failure_file": "__test__/deploy/application.real.test.ts"
+  },
+  "workspace_typechecks": {
+    "passed": 4
+  },
+  "live_integration_and_compatibility_checks": {
+    "passed": 66
+  },
+  "browser_checks": {
+    "passed": 45
+  },
+  "biome": "passed on all 19 changed source and test files",
+  "production_build": "passed in isolated source copy; final frontend rebuilt successfully",
+  "build_limit": "Default dokploy-postgres hostname was unavailable during build-time lookups; build completed",
+  "saved_configurations": "All eight original records unchanged and runnable",
+  "feature_commit": "71725173d8e0dfe30e106f0eafa98f3312c221c4",
+  "documentation_commit": "6787e814379b4a4d650b3cc831333811a60abe33",
+  "documentation_checks": [
+    "frozen lockfile install",
+    "Biome CI",
+    "workspace typecheck",
+    "docs typecheck after Next generated route types",
+    "production docs build with one worker",
+    "six section anchors and rendered page inspected"
+  ],
+  "limits": [
+    "S3 tested with a local compatible emulator, not live AWS",
+    "Remote SSH dispatch covered by automated tests, not a live remote deployment",
+    "Four broader-suite failures in real Git/build/Swarm deployment tests; full suite is not green",
+    "Custom save validation performs a full database dump, discards output and does not test S3",
+    "Restore dialog does not expose the new endpoint overrides; tested restores use native database clients"
+  ]
+}
